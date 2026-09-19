@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Privacy policy for NotePi — a private, local-first note-taking app.">
+<title>NotePi — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --indigo: #4C6EF5;
+    --bg: #FBFBFD;
+    --card: #FFFFFF;
+    --tonal: #F1F2F7;
+    --text: #1B1C21;
+    --muted: #5C5F6B;
+    --hairline: #E7E8EF;
+    --radius: 16px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101114;
+      --card: #181A1F;
+      --tonal: #1E2026;
+      --text: #EDEDF2;
+      --muted: #9BA0AC;
+      --hairline: #26282F;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 96px; }
+
+  header .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  header h1 { font-size: 34px; letter-spacing: -0.02em; margin: 0 0 6px; font-weight: 700; }
+  header p.sub { color: var(--muted); margin: 0 0 8px; font-size: 17px; }
+  .updated {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--indigo);
+    background: color-mix(in srgb, var(--indigo) 10%, transparent);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-top: 10px;
+  }
+
+  .tldr {
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin: 32px 0 40px;
+  }
+  .tldr h2 { margin: 0 0 10px; font-size: 15px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--indigo); }
+  .tldr ul { margin: 0; padding-left: 20px; }
+  .tldr li { margin: 6px 0; }
+
+  nav.toc {
+    background: var(--tonal);
+    border-radius: var(--radius);
+    padding: 18px 24px;
+    margin-bottom: 44px;
+    font-size: 15px;
+  }
+  nav.toc strong { display: block; margin-bottom: 8px; font-weight: 600; }
+  nav.toc a { color: var(--muted); text-decoration: none; display: inline-block; margin: 3px 14px 3px 0; }
+  nav.toc a:hover { color: var(--indigo); }
+
+  section { margin-bottom: 40px; }
+  h2 { font-size: 22px; letter-spacing: -0.01em; margin: 40px 0 12px; font-weight: 700; }
+  h3 { font-size: 17px; margin: 24px 0 8px; font-weight: 600; }
+  p { margin: 10px 0; }
+  li { margin: 6px 0; }
+  a { color: var(--indigo); }
+  .muted { color: var(--muted); }
+
+  table.perms {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: 14px 0;
+  }
+  table.perms th, table.perms td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+  }
+  table.perms th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; }
+  table.perms td code {
+    background: var(--tonal);
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hairline);
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .todo {
+    background: color-mix(in srgb, #E8A13A 12%, transparent);
+    border: 1px dashed #E8A13A;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="badge" aria-hidden="true">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="12" fill="#4C6EF5"/>
+        <path d="M14 14h16v3.6h-5.1c-.6 4.1-1.6 8.1-3.3 11.4l-3.3-1.5c1.6-2.9 2.6-6.2 3.1-9.9H14V14zm7.9 16.2c.9 2.1 2.6 3.3 4.4 3.3 1.9 0 3.3-1.1 3.3-2.9 0-1.2-.7-2.2-2.2-2.2h-1.1v-3.1h1c1.3 0 1.9-.7 1.9-1.7" fill="#fff" opacity="0.95"/>
+      </svg>
+      <strong>NotePi</strong>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="sub">NotePi is a private, local-first note-taking app. This page explains — in plain language — what NotePi does with your information.</p>
+    <span class="updated">Effective date: September 18, 2026</span>
+  </header>
+
+  <div class="tldr">
+    <h2>The short version</h2>
+    <ul>
+      <li><strong>Your notes never leave your device</strong> unless you explicitly export or back them up yourself.</li>
+      <li><strong>No account, no ads, no analytics, no tracking.</strong> We don't collect or transmit personal data.</li>
+      <li>Everything — notes, checklists, calculations, attachments — is stored in a local database on your phone.</li>
+      <li>Locked notes are encrypted with AES-256; the key never leaves your device's secure hardware.</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <strong>Contents</strong>
+    <a href="#collect">1. What we collect</a>
+    <a href="#storage">2. Where your data lives</a>
+    <a href="#permissions">3. Permissions</a>
+    <a href="#locked">4. Locked notes</a>
+    <a href="#drive">5. Optional Google Drive backup</a>
+    <a href="#export">6. Export &amp; sharing</a>
+    <a href="#thirdparty">7. Third-party services</a>
+    <a href="#children">8. Children</a>
+    <a href="#security">9. Security</a>
+    <a href="#changes">10. Changes</a>
+    <a href="#contact">11. Contact</a>
+  </nav>
+
+  <section id="collect">
+    <h2>1. What information NotePi collects</h2>
+    <p><strong>None.</strong> NotePi is designed as a local-first app:</p>
+    <ul>
+      <li>No user account is required — there is no sign-up, no login, no email address collected.</li>
+      <li>No analytics or telemetry. NotePi contains no analytics SDKs and does not collect usage statistics, crash identifiers, device fingerprints, or advertising identifiers.</li>
+      <li>No advertising. NotePi shows no ads and shares nothing with advertising networks.</li>
+    </ul>
+    <p class="muted">You can verify this yourself: the app works fully in airplane mode, and its release build makes no network requests unless you explicitly use the (currently optional) backup feature described in section 5.</p>
+  </section>
+
+  <section id="storage">
+    <h2>2. Where your data lives</h2>
+    <p>All content you create in NotePi is stored <strong>locally on your device</strong>:</p>
+    <ul>
+      <li><strong>Notes, collections, tags, reminders, and settings</strong> are stored in a SQLite database in the app's private storage area (Android app sandbox).</li>
+      <li><strong>Attachments</strong> (images and files you add to notes) are stored as files in the app's private storage.</li>
+      <li><strong>Home-screen widget</strong> data (titles of your pinned notes) is stored in the app's private shared storage so the widget can display it. It never leaves the device.</li>
+      <li><strong>Content shared into NotePi</strong> from other apps (text, images, files via the system share sheet) is stored locally as note content, exactly like anything you type.</li>
+    </ul>
+    <p>Because this storage is app-private, <strong>uninstalling NotePi deletes all of it</strong> from your device (subject to normal Android behavior for app data). You can also delete individual notes in the app; deleted notes go to the Trash and are permanently purged after 30 days.</p>
+  </section>
+
+  <section id="permissions">
+    <h2>3. Android permissions and why NotePi uses them</h2>
+    <table class="perms">
+      <tr><th>Permission</th><th>Why NotePi needs it</th></tr>
+      <tr>
+        <td><code>POST_NOTIFICATIONS</code></td>
+        <td>To show reminder notifications for notes you attach a reminder to. Requested at runtime; entirely optional — the app works without it.</td>
+      </tr>
+      <tr>
+        <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+        <td>To reschedule your reminder notifications after the device restarts. No data is read or sent.</td>
+      </tr>
+      <tr>
+        <td><code>USE_BIOMETRIC</code></td>
+        <td>To unlock notes you have chosen to lock, using the device's built-in biometric prompt. NotePi never sees or stores your fingerprint/face data — the operating system only tells the app "matched" or "not matched".</td>
+      </tr>
+      <tr>
+        <td><code>INTERNET</code></td>
+        <td>Required by Android for the <em>optional</em> Google Drive backup feature (see section 5). In the current release this feature is disabled and NotePi makes no network requests.</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="locked">
+    <h2>4. Locked notes and encryption</h2>
+    <div class="card">
+      <p>Notes you mark as locked are encrypted on your device with <strong>AES-256</strong>. The encryption key is generated once and stored in the platform's secure enclave (Android Keystore). It never leaves your device, is never backed up, and is not accessible to us as developers.</p>
+      <p class="muted">Consequence: if the device keystore is wiped (e.g. all biometrics removed and security reset, or app data cleared), locked content cannot be recovered by anyone — including us. This is by design.</p>
+    </div>
+  </section>
+
+  <section id="drive">
+    <h2>5. Optional Google Drive backup</h2>
+    <p>NotePi contains an <strong>optional</strong> Google Drive backup feature. It is <strong>disabled in the current release</strong> and hidden from the interface. When it becomes available in a future version:</p>
+    <ul>
+      <li>It activates only if you explicitly connect your Google account.</li>
+      <li>It uses Google Sign-In with the <code>drive.appdata</code> scope, which can only access a hidden, app-private folder in your Drive. NotePi cannot see, read, or modify any other file in your Google Drive.</li>
+      <li>The backup is a single rolling file (<code>notepi_backup.json</code>) in that hidden folder.</li>
+      <li>Your use of Google Drive is governed by <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.</li>
+    </ul>
+    <p>Regardless of this feature, NotePi's default state is: <strong>everything stays on your device</strong>.</p>
+  </section>
+
+  <section id="export">
+    <h2>6. Export, backup and sharing — you choose</h2>
+    <p>NotePi includes a local <strong>JSON export/restore</strong> feature. Exports only happen when you tap the export action, and the file is handed to the standard Android share/save UI — you decide where it goes (Files, email, Drive, a chat app, …). That destination's own privacy policy applies to the exported copy.</p>
+  </section>
+
+  <section id="thirdparty">
+    <h2>7. Third-party services</h2>
+    <p>NotePi has no third-party analytics, crash-reporting, or advertising providers. The only third-party service involved in any feature is <strong>Google Drive</strong>, and only for the optional, user-initiated backup described in section 5. Opening external links you tap in notes happens in your browser and is governed by your browser's and that site's policies.</p>
+  </section>
+
+  <section id="children">
+    <h2>8. Children's privacy</h2>
+    <p>NotePi is a general-audience utility and is not directed at children under 13. Because the app collects no personal information from anyone, it does not knowingly collect personal information from children.</p>
+  </section>
+
+  <section id="security">
+    <h2>9. Security</h2>
+    <p>Since your data is stored only on your device, its security follows your device's security: set a device lock and keep your OS up to date. Within the app, locked notes add AES-256 encryption with hardware-backed keys. There are no NotePi servers that could be breached to expose your notes — we have no servers.</p>
+  </section>
+
+  <section id="changes">
+    <h2>10. Changes to this policy</h2>
+    <p>If we change this policy, we will update this page and change the effective date above. Significant changes will also be mentioned in the app's release notes on Google Play. The data collected by older versions is not retroactively affected by new features you don't use.</p>
+  </section>
+
+  <section id="contact">
+    <h2>11. Contact</h2>
+    <p>Questions or concerns about this policy or NotePi's privacy practices?</p>
+    <p class="todo"><strong>TODO before publishing:</strong> replace the placeholder below with your real contact address.</p>
+    <p>Email: <a href="mailto:YOUR-CONTACT-EMAIL@example.com">YOUR-CONTACT-EMAIL@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>NotePi — private, local-first notes. This policy applies to the NotePi app distributed via Google Play.</p>
+  </footer>
+
+</div>
+</body>
+</html>
